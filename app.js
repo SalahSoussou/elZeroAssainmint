@@ -49,7 +49,7 @@ myElement.appendChild(myComment);
 
 document.body.appendChild(myElement);
 
-console.log(myElement);
+// console.log(myElement);
 
 // =========================================
 
@@ -58,3 +58,33 @@ for (let i = 0; i < 10; i++) {
   pruductDiv.innerHTML = `<h1>pruduct number ${i + 1}</h1>`;
   document.body.appendChild(pruductDiv);
 }
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++
+
+let container = document.querySelector(".container");
+
+console.log(container);
+console.log(container.children);
+console.log(container.childNodes);
+
+// More : firstChild , lastChild , firstElementChile , lastElementChile
+
+// form
+document.forms[0].onsubmit = function (e) {
+  let userV = false;
+  let emailV = false;
+
+  if (user.value !== "" && user.value.length <= 10 && email.value !== "") {
+    userV = true;
+    emailV = true;
+  }
+
+  if (!userV || !emailV) {
+    e.preventDefault();
+  }
+};
+
+document.links[0].onmouseenter = function (e) {
+  console.log(e);
+  e.preventDefault();
+};
