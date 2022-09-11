@@ -88,3 +88,51 @@ document.links[0].onmouseenter = function (e) {
   console.log(e);
   e.preventDefault();
 };
+/*
+[Class list]
+- e.classList => 
+        .length
+        .contains
+        .item(index)
+        .add
+        .remove
+        .toggle
+*/
+
+/*
+DOM [Css]
+  - e.style
+  - e.style.cssText = ""
+  - e.style.removProprety("prp name")
+  - e.style.setProprety("prp name", " value", priority?)
+*/
+
+/*
+  -e.before
+  -e.after
+  -e.append
+  -e.prepend
+  -e.remove
+*/
+
+/*
+DOM [Traversing]
+-e.nextSibling
+-e.previousSibling
+-e.nextElementSibling
+-e.previousElementSibling
+-e.parentElement
+*/
+
+/*
+DOM [Cloning]
+ -e.cloneNode()
+*/
+let hi = document.getElementById("hello");
+let num = 1;
+hi.onclick = function () {
+  let newP = hi.cloneNode(true);
+  newP.id = `${newP.id + num}`;
+  num++;
+  container.appendChild(newP);
+};
