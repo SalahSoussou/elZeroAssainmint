@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+
+#generater{
+    width: 85%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+}
+
+#text{
+    width:calc(100% - 98px);
+    height: 40px;
+    outline: none;
+    text-align: center;
+    border-color: #ddd;
+}
+button{
+    width: 90px;
+    border: none;
+    background-color: rgb(253, 107, 49);
+    color: #fff;
+
+}
+#container{
+    width: 85%;
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 20px 15px;
+        background-color: #eee;
+}
