@@ -38,3 +38,52 @@ console.log(location);
 --window.open()
 --window.close()
 */
+//===============================================================
+
+// BOM [History]
+//  history.back()
+//  history.forward()
+//  history.go(1) // history index
+
+console.log(history);
+
+// Scrolling  ===========================================
+/*
+BOM
+-stop()
+-print()
+-focus()
+
+++++ Scrolling  ++++++
+
+-scrollTo(x,y || Optionx)   => To
+-scroll(x,y || Optionx)
+-scrollBy(x,y || Optionx)   =>By
+
+
+----scrollX & scrollY   => returns the valuoe scrolled
+*/
+let buton = document.createElement("button");
+buton.innerHTML = "print the pege";
+document.body.appendChild(buton);
+
+buton.addEventListener("click", () => {
+  window.print();
+});
+
+//  ================ Local storag
+/*
+BOM [Local storag]
+-setItem
+-getItem
+-removeItem
+-clear
+-key
+
+*/
+
+localStorage.setItem("color", "#F00");
+localStorage.fontWeight = "bold";
+localStorage["fontSize"] = "24px";
+
+buton.style.backgroundColor = localStorage.color;
