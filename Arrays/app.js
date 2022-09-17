@@ -113,9 +113,25 @@ console.log(unekData.has(5));
 
 /*
 = new Map()
+--set
+--get
+--delete
+--clear
+--has
+
+-size
 
 */
 console.log("#".repeat(30));
 
-let myObject = {};
-let myMap = new Map();
+// let myObject = {};
+let myMap = new Map([
+  ["key", "value"],
+  ["hi", "hello"],
+]);
+
+myMap.set(10, "number");
+myMap.set("Name", "string");
+
+console.log(myMap);
+console.log(myMap.get(10));
