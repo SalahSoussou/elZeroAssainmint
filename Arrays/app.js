@@ -135,3 +135,25 @@ myMap.set("Name", "string");
 
 console.log(myMap);
 console.log(myMap.get(10));
+
+// Array.from() ==========
+
+/*
+---Array.from(Iterabl, map-func, This)
+
+---array.copyWithin(Target, start => optional, end => optional)
+---array.some()
+*/
+
+console.log(Array.from("Salah"));
+console.log(Array.from("12345", (e) => +e + +e));
+
+let oregenalArr = [10, 20, 30, 40, 50, 60, "A", "B", "C"];
+// ================================(4)==========(7)===(8)
+// ====================(1)======================(-2)===(-1)
+
+console.log(oregenalArr);
+console.log(oregenalArr.copyWithin(4, 7, 8));
+console.log(oregenalArr.copyWithin(1, -2));
+
+// console.log(oregenalArr.copyWithin(3));
