@@ -84,7 +84,7 @@ console.log(theAge);
 console.log(c);
 console.log(reu);
 
-///  set Data type ===============
+///  Set Data type ===============
 /*
 - new Set()
 --size
@@ -142,7 +142,8 @@ console.log(myMap.get(10));
 ---Array.from(Iterabl, map-func, This)
 
 ---array.copyWithin(Target, start => optional, end => optional)
----array.some()
+---array.some(Iterabl, map-func, This)
+---array.evry(Iterabl, map-func, This)
 */
 
 console.log(Array.from("Salah"));
@@ -157,3 +158,5 @@ console.log(oregenalArr.copyWithin(4, 7, 8));
 console.log(oregenalArr.copyWithin(1, -2));
 
 // console.log(oregenalArr.copyWithin(3));
+let n1 = [10, 30, 10, 20];
+let n2 = [30, 20, 10];
