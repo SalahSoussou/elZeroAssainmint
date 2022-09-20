@@ -7,13 +7,13 @@ Date & Time
 
 let dateNow = new Date();
 
-console.log(dateNow);
-console.log(Date.now()); //ms
-console.log(Date.now() / 1000); //sec
-console.log(Date.now() / 1000 / 60); //min
-console.log(Date.now() / 1000 / 60 / 60); //hr
-console.log(Date.now() / 1000 / 60 / 60 / 24); //day
-console.log(Date.now() / 1000 / 60 / 60 / 24 / 365); //year
+// console.log(dateNow);
+// console.log(Date.now()); //ms
+// console.log(Date.now() / 1000); //sec
+// console.log(Date.now() / 1000 / 60); //min
+// console.log(Date.now() / 1000 / 60 / 60); //hr
+// console.log(Date.now() / 1000 / 60 / 60 / 24); //day
+// console.log(Date.now() / 1000 / 60 / 60 / 24 / 365); //year
 
 console.log("#".repeat(40));
 
@@ -51,5 +51,45 @@ console.log("#".repeat(40));
 // Set Date & Time  ===============================
 
 /*
-
+- setTime(ms)
+- setDate() => day of the month
+- setfullYear()
+- setMonth()
+- setHours()
+- setMinutes()
+- setSeconds()
 */
+console.log(dateNow);
+console.log("#".repeat(40));
+
+// dateNow.setTime(0);
+// console.log(dateNow);
+
+// dateNow.setDate(35);
+// console.log(dateNow);
+
+dateNow.setFullYear(2021);
+console.log(dateNow);
+
+dateNow.setMonth(2);
+console.log(dateNow);
+
+// ===========================================================
+
+/*
+new Date(timestamp)
+new Date(Date string)
+new Date(Numeric Values)
+
+Date.pars() read date from string
+*/
+let start = new Date();
+for (let i = 0; i < 100000; i++) {
+  // document.write(`<div>${i}</div>`);
+  let mydiv = document.createElement("div");
+  mydiv.appendChild(document.createTextNode(i));
+  document.body.appendChild(mydiv);
+}
+let end = new Date();
+
+console.log(end - start);
